@@ -37,7 +37,7 @@ flowchart LR
     K --> M[Azure OpenAI<br/>chat model]
     M --> R[Grounded response]
 
-    subgraph Ingestion (one-time)
+    subgraph "Ingestion (one-time)"
         D[Policy .txt documents] --> CH[Chunking]
         CH --> E[Azure OpenAI<br/>embedding model]
         E --> C
